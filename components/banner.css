@@ -1,23 +1,25 @@
 .banner {
-  padding: 200 auto;
-  margin-bottom: 20px;
   background-color: #585D6B;
 }
 
-.banner .container {
-  /*margin: 20px;*/
+/*.banner .container {
   background-color: transparent;
   box-shadow: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 70px;
+}*/
+
+.banner-content {
+  align-items: center;
+  justify-content: center;
 }
 
-.banner .banner-content {
-  text-align: left;
-  margin-left: 30px;
+.banner .banner-details {
   flex-grow: 1;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .banner h1 {
@@ -33,6 +35,7 @@
   font-weight: lighter;
   opacity: 0.7;
   transition: 0.3s;
+  margin-bottom: 0;
 }
 
 .banner p:hover {
@@ -42,13 +45,13 @@
 }
 
 #img-round {
-  width: 250px;
+  border: solid 3px white;
   height: 250px;
-  border-radius: 50%;
+  width: 250px;
   object-fit: cover;
-  border: 5px solid #fff;
   filter: grayscale(100%);
   transition: 0.3s;
+  margin-right: 30px;
   margin-left: 30px;
 }
 

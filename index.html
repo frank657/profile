@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
@@ -12,12 +13,14 @@
   <body>
     <div class="banner">
       <div class="container">
-        <img src="images/profile_pic.jpg" alt="Profile Picture" id="img-round">
-        <div class="banner-content">
-          <h1>Hey there!</h1>
-          <p>My name is <strong>Frank</strong>, nice to meet you!</p>
+        <div class="banner-content d-flex flex-wrap py-5">
+          <img class="rounded-circle border-white" src="images/profile_pic.jpg" alt="Profile Picture" id="img-round">
+          <div class="banner-details">
+            <h1>Hey there!</h1>
+            <p>My name is <strong>Frank</strong>, nice to meet you!</p>
+          </div>
+
         </div>
-<!--         <p class="btn-round"><i class="fas fa-angle-down"></i></p> -->
       </div>
     </div>
 
@@ -29,26 +32,40 @@
 
       <div class="card">
         <h2>Let me introduce myself…</h2>
-        <div class="card-content">
-          <img src="images/calculator.svg" alt="">
-          <p>I come from an accounting & finance background where I dealt with numbers. I have gained some experiences in medium and big size audit firms (such as Deloitte and BDO) back in the Netherlands. Soon after I realized that I was looking for a more adventurous career path and as China was (and still is) booming, I packed my bag, and moved to China. From that moment on, the rest is history… </p>
+        <div class="row card-content">
+          <div class="col-12 col-lg-3">
+            <img src="images/calculator.svg" alt="">
+          </div>
+          <div class="col-12 col-lg-9">
+            <p >I come from an <strong><u>accounting & finance</u></strong> background where I dealt with numbers. I have gained some experiences in medium and big size audit firms (such as Deloitte and BDO) back in the Netherlands. Soon after I realized that I was looking for a more adventurous career path and as China was (and still is) booming, I packed my bag, and moved to China. From that moment on, the rest is history… </p>
+          </div>
         </div>
 
-        <div class="card-content">
-          <img src="images/designer.svg" alt="">
-          <p>I was very amazed by the technological development, the fast-growing economy and the rapid adaption of consumers in this gigantic market. I wanted to be part of this. I joined a digital design company to manage their operations, and at the same time to learn about the digital scene here in China.</p>
+        <div class="row card-content">
+          <div class="col-12 col-lg-3">
+            <img src="images/designer.svg" alt="">
+          </div>
+          <div class="col-12 col-lg-9">
+            <p>I was very amazed by the technological development, the fast-growing economy and the rapid adaption of consumers in this gigantic market. I wanted to be part of this. I joined a <strong><u>digital design</u></strong> company to manage their operations, and at the same time to learn about the digital scene here in China.</p>
+          </div>
         </div>
 
-        <div class="card-content">
-          <img src="images/phone.svg" alt="">
-          <p>The digital experience was a great stepping stone for me to get into the tech world. Beginning of 2018, I became the product manager of a tech startup in sport, YEYU. I helped to develop their mobile application and WeChat Mini Program. I enjoy managing apps, however, to be a good product manager, the technical skills were essential.</p>
+        <div class="row card-content">
+          <div class="col-12 col-lg-3">
+            <img src="images/phone.svg" alt="">
+          </div>
+          <div class="col-12 col-lg-9">
+            <p>The digital experience was a great stepping stone for me to get into the tech world. Beginning of 2018, I became the <strong><u>product manager</u></strong> of a tech startup in sport, YEYU. I helped to develop their mobile application and WeChat Mini Program. I enjoy managing apps, however, to be a good product manager, the technical skills were essential.</p>
+          </div>
         </div>
 
-        <div class="card-content">
-          <div class="lewagon">
+        <div class="row card-content">
+          <div class="col-12 col-lg-3">
             <img src="https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-fe76916e1b923ade71e253ae6dc031d936e5e8eebac4e26b0fbac650ea6ee360.png" alt="">
           </div>
-          <p>Now here I am! At Le Wagon, being part of this amazing tech community!</p>
+          <div class="col-12 col-lg-9">
+            <p>Now here I am! At Le Wagon, being part of this amazing tech community!</p>
+          </div>
         </div>
       </div>
 <!--
@@ -57,10 +74,31 @@
         <p>Besides working(or mainly coding lately), I love doing sport in my free time. I have competed in squash for some years and since 3 years ago my attention has gone to practicing combat sports such as thai boxing and brazilian jiu jitsu.</p>
       </div> -->
 
+      <!-- MY INTERESTS -->
+      <div class="card">
+        <h2>What are my interests?</h2>
+        <div class="interests">
+          <div class="interest-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1533022139390-e31c488d69e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80)">
+            WeChat
+          </div>
+
+          <div class="interest-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)">
+            Programming
+          </div>
+
+          <div class="interest-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)">
+            Sport
+          </div>
+
+          <div class="interest-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)">
+            Corporate services
+          </div>
+        </div>
+      </div>
+
       <div class="card">
         <p>More to come...</p>
       </div>
-
     </div>
 
     <div class="footer">
@@ -72,4 +110,3 @@
     </div>
   </body>
 </html>
-
